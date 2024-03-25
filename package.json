@@ -53,6 +53,7 @@
     "concat-stream": "https://github.com/max-mapper/concat-stream"
   },
   "dependencies": {
+    "dotenv": "^16.4.5",
     "webpack": "^5.91.0",
     "webpack-cli": "^5.1.4"
   }
