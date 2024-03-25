@@ -25,7 +25,7 @@
   ],
   "scripts": {
     "prepare": "yarn workspaces run prepare",
-    "prebuild": "ls ./node_modules/.bin || ./node_modules/.bin/webpack --version",
+    "prebuild": "ls node_modules/.bin || ./node_modules/.bin/webpack --version",
     "build": "./node_modules/.bin/webpack --mode production",
     "test": "yarn workspaces run test",
     "lint": "yarn workspaces run lint",
@@ -38,7 +38,7 @@
     "start:node": "yarn workspace eth hardhat:node",
     "start:game": "run-s wait:node deploy:contracts add:planets start:client",
     "add:planets": "yarn workspace eth hardhat:dev game:createPlanets",
-    "start": "run-p start:node start:game", // start:client
+    "start": "run-p start:node start:game start:client",
     "clean:workspaces": "yarn workspaces run clean",
     "clean:self": "del-cli node_modules/",
     "clean": "run-s clean:workspaces clean:self"
@@ -53,6 +53,7 @@
     "concat-stream": "https://github.com/max-mapper/concat-stream"
   },
   "dependencies": {
-    "webpack": "^5.91.0"
+    "webpack": "^5.91.0",
+    "webpack-cli": "^5.1.4"
   }
 }
