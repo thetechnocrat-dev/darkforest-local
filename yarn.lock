@@ -956,13 +956,6 @@
     "@darkforest_eth/types" "6.7.9"
     big-integer "^1.6.48"
 
-"@darkforest_eth/constants@file:packages/constants":
-  version "6.7.10"
-  dependencies:
-    "@darkforest_eth/constants" "file:../../Library/Caches/Yarn/v6/npm-@darkforest-eth-constants-6.7.10-da68984d-2cf1-4135-97c8-a54f4074fbce-1711413839888/node_modules/@darkforest_eth/constants"
-    "@darkforest_eth/types" "6.7.9"
-    big-integer "^1.6.48"
-
 "@discoveryjs/json-ext@^0.5.0":
   version "0.5.5"
   resolved "https://registry.npmjs.org/@discoveryjs/json-ext/-/json-ext-0.5.5.tgz"
